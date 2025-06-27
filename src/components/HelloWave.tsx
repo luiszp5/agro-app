@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { StyleSheet } from 'react-native';
+import React, { useEffect } from 'react';
+import { Pressable, StyleSheet } from 'react-native';
 import Animated, {
     useAnimatedStyle,
     useSharedValue,
@@ -11,30 +11,40 @@ import Animated, {
 import { ThemedText } from './ThemedText';
 
 export function HelloWave() {
-  const rotationAnimation = useSharedValue(0);
+  const rotation = useSharedValue(0);
 
   useEffect(() => {
-    rotationAnimation.value = withRepeat(
-      withSequence(withTiming(25, { duration: 150 }), withTiming(0, { duration: 150 })),
-      4 // Run the animation 4 times
+    rotation.value = withRepeat(
+      withSequence(
+        withTiming(-20, { duration: 120 }),
+        withTiming(0, { duration: 120 }),
+        withTiming(20, { duration: 120 }),
+        withTiming(0, { duration: 120 })
+      ),
+      4,
+      false
     );
-  }, [rotationAnimation]);
+  }, []);
 
   const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ rotate: `${rotationAnimation.value}deg` }],
+    transform: [{ rotate: `${rotation.value}deg` }],
   }));
 
   return (
-    <Animated.View style={animatedStyle}>
-      <ThemedText style={styles.text}>👋</ThemedText>
-    </Animated.View>
+    <Pressable style={styles.container}>
+      <Animated.Text style={[styles.emoji, animatedStyle]}>👋</Animated.Text>
+      <ThemedText type="default">¡Hola!</ThemedText>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  text: {
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  emoji: {
     fontSize: 28,
-    lineHeight: 32,
-    marginTop: -6,
   },
 });

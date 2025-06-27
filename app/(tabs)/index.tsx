@@ -1,13 +1,13 @@
 import { useRouter } from 'expo-router';
 import React from 'react';
 import {
-    Alert,
-    FlatList,
-    Platform,
-    SafeAreaView,
-    StyleSheet,
-    Text,
-    View,
+  Alert,
+  FlatList,
+  Platform,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 
 import { TaskCard } from '@/src/components/TaskCard';
@@ -23,7 +23,6 @@ export default function HomeScreen() {
   const { notifyActivityChange } = useActivityChange();
 
   const handleTaskPress = (task: Task) => {
-    // Por ahora, solo mostrar un alert. La pantalla de detalle se implementará después
     Alert.alert(
       'Detalle de Tarea',
       `${task.name}\n\n${task.description}\n\nNota: ${task.platformNote}`,

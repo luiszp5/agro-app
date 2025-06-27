@@ -42,7 +42,6 @@ export const useTasks = (currentSeason: string = 'Primavera') => {
     if (isDbReady) {
       filterTasksBySeason();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tasks, currentSeason, activityChangeTrigger, isDbReady]);
 
   const loadTasks = async () => {
