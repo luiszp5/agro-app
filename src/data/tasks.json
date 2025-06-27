@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Riego por goteo",
+    "description": "Riego eficiente para mantener humedad óptima en el suelo. Asegúrate de verificar que todos los goteros estén funcionando correctamente.",
+    "season": "Primavera",
+    "frequency": "Diaria",
+    "platformNote": "Esta tarea es crítica en iOS - verifica la configuración de notificaciones para recordatorios."
+  },
+  {
+    "id": 2,
+    "name": "Fertilización orgánica",
+    "description": "Aplicar fertilizantes orgánicos para mejorar la calidad del suelo y promover el crecimiento saludable de las plantas.",
+    "season": "Primavera",
+    "frequency": "Semanal",
+    "platformNote": "En Android, usa la función de calendario integrada para programar aplicaciones."
+  },
+  {
+    "id": 3,
+    "name": "Control de plagas",
+    "description": "Inspección y aplicación de métodos de control de plagas de manera preventiva y sostenible.",
+    "season": "Primavera",
+    "frequency": "Quincenal",
+    "platformNote": "iOS: Usa la cámara para documentar infestaciones. Android: Comparte fotos directamente con expertos."
+  },
+  {
+    "id": 4,
+    "name": "Poda de árboles",
+    "description": "Poda de formación y mantenimiento para promover el crecimiento saludable y la producción de frutos.",
+    "season": "Primavera",
+    "frequency": "Mensual",
+    "platformNote": "Esta tarea requiere herramientas especializadas - verifica inventario antes de comenzar."
+  },
+  {
+    "id": 5,
+    "name": "Siembra de cultivos",
+    "description": "Siembra de cultivos de temporada siguiendo el calendario agrícola local.",
+    "season": "Primavera",
+    "frequency": "Semanal",
+    "platformNote": "iOS: Usa la función de geolocalización para registrar parcelas. Android: Integra con mapas offline."
+  },
+  {
+    "id": 6,
+    "name": "Mantenimiento de equipos",
+    "description": "Revisión y mantenimiento preventivo de maquinaria y herramientas agrícolas.",
+    "season": "Verano",
+    "frequency": "Mensual",
+    "platformNote": "Documenta el estado de los equipos con fotos para seguimiento."
+  },
+  {
+    "id": 7,
+    "name": "Monitoreo de humedad",
+    "description": "Control regular de los niveles de humedad del suelo para optimizar el riego.",
+    "season": "Verano",
+    "frequency": "Diaria",
+    "platformNote": "iOS: Conecta sensores de humedad para lecturas automáticas. Android: Usa la función de widgets para monitoreo rápido."
+  },
+  {
+    "id": 8,
+    "name": "Cosecha selectiva",
+    "description": "Cosecha de frutos y vegetales en su punto óptimo de maduración.",
+    "season": "Verano",
+    "frequency": "Diaria",
+    "platformNote": "Esta tarea es crítica para la calidad del producto final."
+  },
+  {
+    "id": 9,
+    "name": "Preparación de suelo",
+    "description": "Labranza y preparación del suelo para la próxima temporada de cultivo.",
+    "season": "Otoño",
+    "frequency": "Quincenal",
+    "platformNote": "iOS: Usa la función de notas para registrar condiciones del suelo. Android: Integra con apps de meteorología."
+  },
+  {
+    "id": 10,
+    "name": "Almacenamiento de semillas",
+    "description": "Recolección y almacenamiento adecuado de semillas para la próxima temporada.",
+    "season": "Otoño",
+    "frequency": "Mensual",
+    "platformNote": "Mantén un inventario digital de semillas con fechas de vencimiento."
+  }
+] 
