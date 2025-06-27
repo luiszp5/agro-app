@@ -8,7 +8,6 @@ class DatabaseService {
     try {
       this.db = await SQLite.openDatabaseAsync('agro_app.db');
       
-      // Crear tabla de actividades si no existe
       await this.db.execAsync(`
         CREATE TABLE IF NOT EXISTS activities (
           id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -49,7 +49,6 @@ export const useTasks = (currentSeason: string = 'Primavera') => {
       setLoading(true);
       setError(null);
       
-      // Importar datos desde el archivo JSON local
       const tasksData = require('../data/tasks.json');
       setTasks(tasksData);
     } catch (err) {
